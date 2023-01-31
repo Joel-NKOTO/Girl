@@ -1,0 +1,96 @@
+# Girl
+TP 6:
+.gitignore.c à créer 
+
+pour la récupération en local : 
+git clone "lien du projet"
+Ca renvoie "Cloning into C_FizzBuzz"
+ et ensuite vérifier dans le fichier si un dossier copie du projet 
+GitHub existe
+
+cd C_FizzBuzz
+
+ts -al
+
+git branch
+
+git checkout dev_start (pour switcher vers dev_start)
+
+touch FizzBuzz.c (pour créer le fichier FizzBuzz.c)
+
+git commit -m "Ajout d'un fichier FizzBuzz.c"
+
+git push origin dev_start
+
+Créer sur la page web une nouvelle branche "main" du nom de "release_beta" (tous 
+les fichers qui existaient dans la branche main d'avant sont transférés dans la 
+branche main "release_beta" qui est de type main aussi
+
+git branch (ça mointre que *dev_start)
+
+git fetch --all (ça fait basculer l'origine du fichier vers release_beta en 
+affichant release_beta->origin/release_beta)
+
+git branch (ça affiche les trous branches: main, dev_start et release_beta 
+en disant que release_beta est la branche de travail actuelle)
+
+git checkout release_beta
+
+Ouvrir le fichier README présent dans la branche release_beta (il y aura Update 
+README qui veut dire que le fichier a été modifié) Et cette petite partie est 
+faite dans le site web. La modification faite est dans l'espace de texte du site 
+Web quand on ouvre README
+
+se trouver dans la branche release_beta (git checkout release_beta)
+
+git pull origin (actualiser le travail localement ayant été fait à distance)
+
+Créer une nouvelle branche dans le site web "Add Rule"
+Require a pull request before merging" et "Require approvals: 1" à cocher 
+toutes les deux
+
+
+
+Settings, Collaborateurs, écrire le mail du binôme et entrer
+
+Accepter l'invitation une fois email reçu
+
+Aller dans release_beta pour voir si fusionnement fait et voir s'il y a 
+FizzBuzz.c qui appartient normalement à release_beta
+
+Le binôme va à Pull requests pour voir s'il y a "ajout de fichier" 
+
+Dès que demande acceptée, FizzBuzz.c est présent dans release_beta (donc 
+demande de fusionnement acceptée)
+
+
+*****************************
+TP7 :
+
+Copier le projet du lien du TP7 dans le compte actuel grâce à Forkez et en 
+conservant le nom proposé. 
+Sélectionner ou garder "Copy	" puis OK
+
+Dans New Repositories, vérifier qu'il y a un nouveau dossier
+
+le clonage : git clone "adresse https du projet dans mon compte GitHub"
+
+cd "Le nom du dossier"
+
+Modifier localement README en l'ouvrant
+
+Dans Issues, on voit toutes le smodifications à ajouter dans READ;me en local
+
+git add READ.me
+
+git commit -m "J'ai ajouté une définition"
+
+git push
+
+J'actualise ensuite mon compte et je vois la définition de READ.me en ligne
+
+Ouvrir le lien initial et regarder le nombre de request (167), soit 167 
+essais de dmoidification de fichiers dans le projet
+
+Faire un nouveau Pull request pour modifier en ligne le fichier et faire 
+la requête d'acceptation de modification à son binôme
